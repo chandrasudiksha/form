@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form</title>
+    <style>
+    body{
+      background-image: url('https://img.freepik.com/free-photo/smiling-happy-indian-student-with-backpack-pointing-his-finger-wall_496169-1532.jpg?t=st=1720092034~exp=1720095634~hmac=b582ce0f568d1d56dfb5eb51473ed35af71fd361547bac4baa76e11b72727427&w=740');
+      background-size: cover;
+      background-position: center;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+    }
+    h1{
+     margin-left:75px;
+    }
+    form{
+      padding:20px;
+      background-color:lightblue;
+      border-radius:10px;
+      margin-left:45px;
+      margin-right:500px;
+    }
+      .group
+      {
+        margin-bottom:15px;
+      }
+      .group label
+      {
+        font-weight:bold;
+        font-size:20px;
+      }
+      .group input,
+      select{
+        width:100%;
+        border-radius:5px;
+        padding:6px;
+        margin-right:100px;
+      }
+      .group input:hover,
+      select:hover{
+        border-color:red;
+        padding:7px;
+      }
+      .group input:focus,
+      select:focus{
+        border-color:green;
+        
+      }
+      .btn{
+      display:flex;
+      margin-top: 20px;
+      justify-content: space-between;
+      }
+      button
+      {
+        border-radius:5px;
+        padding:10px 20px;
+        border-line: none;
+        font-size: 15px;
+      }
+      button:focus
+      {
+        background-color: white;
+      }
+      .sub{
+        background-color: lightgreen;
+      }
+      .can{
+        background-color: #DC143C;
+      }
+      .sub:hover
+      {
+        background-color: green;
+      }
+      .can:hover
+      {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+      <h1>Student Registration Form</h1>
+      <form>
+        <div class="group">
+          <label>Roll Number:</label>
+          <input name="rollno" type="text" placeholder="Enter Roll Number(Eg.7208xxxxxxxx)" required>
+        </div>
+        <div class="group">
+          <label>Name:</label>
+          <input type="text" name="name" placeholder="Enter Your Name(In capital letters)" required>
+        </div>
+        <div class="group">
+          <label>Department</label>
+          <select name="dept" required>
+            <option value="">Select Department</option>
+            <option value="CSE">CSE</option>
+            <option value="IT">IT</option>
+            <option value="ECE">ECE</option>
+            <option value="Mech">Mechanical</option>
+            <option value="Aero">Aeronautical</option>
+          </select>
+        </div>
+        <div class="group">
+          <label>10<sup>th</sup> Percentage</label>
+          <input type="number" placeholder="Enter 10th Mark(Only Values)" required>
+        </div>
+       <div class="group">
+          <label>12<sup>th</sup> Percentage</label>
+          <input type="number" placeholder="Enter 12th Mark(Only Values)" required>
+        </div>
+        <div class="group">
+          <label>UG Percentage</label>
+          <input type="number" placeholder="Enter CGPA(Only Values)" required>
+        </div>
+        <div class="btn">
+          <button class="sub" value="Submit" type="Submit">Submit</button>
+          <button class="can" value="Cancel" type="button">Cancel</button>
+        </div>
+      </form>
+  </body>
+</html>
